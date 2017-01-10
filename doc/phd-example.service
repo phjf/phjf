@@ -1,0 +1,10 @@
+[Unit]
+Description=Ph Peer-to-Peer Network Daemon
+ 
+[Service]
+Type=simple
+User=nobody
+ExecStart=/usr/bin/phd --conf=/etc/phd/phd.cfg
+ 
+[Install]
+WantedBy=multi-user.target
